@@ -1,8 +1,8 @@
 spring:
   datasource:
 #    url: jdbc:postgresql://10.140.0.4:5432/postgresql
-    #url: jdbc:postgresql://10.140.0.4:5432/postgresql
-    url: jdbc:postgresql://localhost:5432/postgresql
+    url: jdbc:postgresql://10.140.0.4:5432/postgresql
+    #url: jdbc:postgresql://localhost:5432/postgresql
     username: postgresql
     password: postgrespassword
   jpa:
@@ -12,7 +12,7 @@ spring:
       ddl-auto: update
 
   rabbitmq:
-    host: localhost
+    host: 10.146.0.2
     username: guest
     password: guest
     port: 5672

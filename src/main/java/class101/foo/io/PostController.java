@@ -15,6 +15,10 @@ public class PostController {
     @Autowired
     PostRepository postRepository;
 
+    @RequestMapping("/hello")
+    public String hello() {
+        return "hello deploy7";
+    }
     // 1. 글을 작성한다.
     @PostMapping("/post")
     public Post createPost(@RequestBody Post post) {
@@ -39,6 +43,9 @@ public class PostController {
     public Post getPostById(@PathVariable("id") Long id) {
         return postRepository.findById(id).get();
     }
+
+
+
     // 4. 글 내용으로 검색 -> 해당 내용이 포함된 모든 글
     @GetMapping("/search")
     public List<Post> findPostsByContent(@RequestParam String content) {

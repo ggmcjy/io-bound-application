@@ -25,7 +25,7 @@ public class PostController {
 
     @RequestMapping("/hello")
     public String hello() {
-        return "hello deploy7";
+        return "쟈기야 오늘도 수고 했어용 ㅎㅎ - 현석이가 -";
     }
     // 1. 글을 작성한다.
     @PostMapping("/post")
